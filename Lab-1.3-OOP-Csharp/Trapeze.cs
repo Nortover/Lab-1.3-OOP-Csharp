@@ -63,7 +63,7 @@ namespace TrapezeApp
         }
 
         // Перевантаження: Метод приймає масив з 8 елементів
-        public void SetCoordinates(double[] coords)
+        public void SetCoordinates(params double[] coords)
         {
             if (coords.Length != 8)
                 throw new ArgumentException("Масив повинен містити рівно 8 елементів.");
